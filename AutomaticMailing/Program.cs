@@ -38,7 +38,7 @@ namespace AutomaticMailing
 
             //Mail gidecek olan mailin Google Hesabınızı yönetin->Güvenlik->Daha az güvenli uygulama erişimi-> Aç ayarı yapılalıdır.
             SmtpClient smtpClient = new SmtpClient();
-            smtpClient.Credentials = new NetworkCredential("nergis.aktug2020@gmail.com","Nrgs1997ak");
+            smtpClient.Credentials = new NetworkCredential("nergis.aktug2020@gmail.com","######");
             smtpClient.Port = 587;
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.EnableSsl = true;
