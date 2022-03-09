@@ -14,7 +14,7 @@ namespace AutomaticMailing
     {
         static void Main(string[] args)
         {
-            string cs = @"Data Source=NIRVANA\SQLEXPRESS;Initial Catalog=Northwind;Persist Security Info=True;User ID=udemy;Password=1";
+            string cs = @"Data Source=NIRVANA\SQLEXPRESS;Initial Catalog=Northwind;Persist Security Info=True;User ID=MailDB;Password=1";
             string sql="Select*from Orders Where OrderDate>= DATEADD(Day, -720, CONVERT(date, SYSDATETIME()))";
             SqlDataAdapter sda=new SqlDataAdapter(sql,cs);
             DataTable dt =new DataTable();
